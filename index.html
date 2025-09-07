@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Quiz & Carousel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Quiz & Image Carousel</h1>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz-section">
+    <h2>Quick Quiz</h2>
+    <div id="quiz-container"></div>
+    <button id="submit-btn">Submit</button>
+    <p id="result"></p>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section">
+    <h2>Image Carousel</h2>
+
+    <div class="carousel" id="carousel">
+      <button class="nav prev" aria-label="Previous slide">❮</button>
+
+      <div class="viewport">
+        <div class="track" id="carousel-track">
+          <!-- Hard-coded images -->
+          <div class="slide"><img src="https://picsum.photos/id/1015/1200/675" alt="Image 1"></div>
+          <div class="slide"><img src="https://picsum.photos/id/1025/1200/675" alt="Image 2"></div>
+          <div class="slide"><img src="https://picsum.photos/id/1035/1200/675" alt="Image 3"></div>
+        </div>
+      </div>
+
+      <button class="nav next" aria-label="Next slide">❯</button>
+    </div>
+
+    <div class="dots" id="carousel-dots"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
